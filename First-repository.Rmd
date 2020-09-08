@@ -8,3 +8,14 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## A Graph for fun:
+
+Plot displ vs hwy mileage for the mpg dataset:
+
+```{r}
+library (ggplot2)
+ggplot(mpg) +
+  geom_point(aes(x=displ, y=hwy))
+```
+
